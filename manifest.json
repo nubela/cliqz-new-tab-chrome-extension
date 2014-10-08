@@ -1,0 +1,23 @@
+{
+    "name": "Cliqz New Tab",
+    "short_name": "Cliqz New Tab",
+    "description": "Cliqz New Tab",
+    "version": "0.1",
+    "permissions": ["storage", "notifications", "topSites", "http://*/*", "https://*/*", "tabs"],
+    "background": {
+        "persistent": true,
+        "scripts": [
+            "src/libs/jquery-2.1.1.min.js",
+            "src/newtab.js",
+            "src/timer.js"
+        ]
+    },
+    "manifest_version": 2,
+    "icons": {
+        "128": "resources/img/icon128.png"
+    },
+    "chrome_url_overrides": {
+        "newtab": "src/html/newtab/index.html"
+    }
+
+}
